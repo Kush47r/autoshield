@@ -1,0 +1,9 @@
+requests==2.31.0
+pandas==2.1.4
+python-dotenv==1.0.0
+sqlalchemy==2.0.25
+schedule==1.2.1
+colorlog==6.8.0
+tenacity==8.2.3
+tqdm==4.66.1
+pyarrow==14.0.2
