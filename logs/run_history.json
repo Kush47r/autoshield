@@ -1,0 +1,43 @@
+[
+  {
+    "status": "success",
+    "run_start": "2026-03-09T08:17:02.976035",
+    "run_end": "2026-03-09T08:17:07.519906",
+    "duration_seconds": 4.54,
+    "sources_run": [
+      "abuseipdb",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 150,
+      "by_source": {
+        "abuseipdb": 100,
+        "nvd": 50
+      },
+      "by_severity": {
+        "critical": 107,
+        "high": 21,
+        "medium": 19,
+        "low": 3
+      },
+      "by_indicator_type": {
+        "ip": 100,
+        "cve": 50
+      },
+      "by_threat_type": {
+        "suspicious": 100,
+        "vulnerability": 50
+      },
+      "critical_count": 107,
+      "high_count": 21,
+      "avg_score": 9.03
+    },
+    "files": {
+      "total_saved": 150,
+      "run_timestamp": "20260309_081705",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.json"
+    }
+  }
+]
