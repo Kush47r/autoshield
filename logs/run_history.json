@@ -39,5 +39,59 @@
       "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.parquet",
       "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.json"
     }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T08:22:08.589557",
+    "run_end": "2026-03-09T08:25:08.123460",
+    "duration_seconds": 179.53,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 7097,
+      "by_source": {
+        "otx": 6937,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 6956,
+        "critical": 107,
+        "high": 21,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "domain": 6445,
+        "file_hash": 369,
+        "ip": 122,
+        "url": 106,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 6466,
+        "apt": 252,
+        "malware": 232,
+        "phishing": 84,
+        "vulnerability": 50,
+        "botnet": 13
+      },
+      "critical_count": 107,
+      "high_count": 21,
+      "avg_score": 5.08
+    },
+    "files": {
+      "total_saved": 7097,
+      "run_timestamp": "20260309_082507",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_082507.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_082507.json"
+    }
   }
 ]
