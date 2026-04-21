@@ -1,6 +1,6 @@
 # pipeline.py
 # Master orchestrator — runs the full Extract → Transform → Load cycle
-# This is the only file you need to run to execute the entire pipeline
+# This is the only file we need to run to execute the entire pipeline
 
 import json
 import sys
@@ -183,3 +183,4 @@ if __name__ == "__main__":
 
     print("\n📊 Pipeline Summary:")
     print(json.dumps(result, indent=2, default=str))
+    print("\n✅ Pipeline execution complete. Check logs for details.")

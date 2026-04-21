@@ -21,6 +21,9 @@ class Settings:
 
     LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
+    # Kafka — comma-separated list of broker addresses
+    KAFKA_BROKERS = os.getenv("KAFKA_BROKERS", "localhost:9092").split(",")
+
     def validate(self):
         missing = []
         if not self.ABUSEIPDB_API_KEY:  missing.append("ABUSEIPDB_API_KEY")
