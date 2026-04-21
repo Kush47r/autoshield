@@ -13,7 +13,7 @@ from streaming.topics import NORMALIZED
 
 logger = get_logger("StorageConsumer")
 
-BATCH_SIZE = 50
+BATCH_SIZE = 500  # Tune based on memory and desired flush frequency
 
 
 class StorageConsumer:
