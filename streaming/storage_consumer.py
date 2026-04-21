@@ -33,12 +33,54 @@ class StorageConsumer:
         self._running = False
 
     def _flush(self):
-        if not self._buffer:
+    if not self._buffer:
+        return
+    df = pd.DataFrame(self._buffer)
+    self._loader.save(df)
+    logger.info(f"Flushed {len(self._buffer)} records to storage")
+    self._buffer.clear()
+    self._auto_push()
+
+def _auto_push(self):
+    """
+    Automatically commits and pushes fresh data to GitHub
+    after every batch save — so teammates always have latest data.
+    """
+    try:
+        import subprocess
+        base = str(settings.BASE_DIR)
+
+        # Stage processed data files
+        subprocess.run(
+            ["git", "add", "data/processed/"],
+            cwd=base,
+            capture_output=True
+        )
+
+        # Commit with timestamp
+        from datetime import datetime
+        msg = f"Auto: pipeline data update {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC"
+        result = subprocess.run(
+            ["git", "commit", "-m", msg],
+            cwd=base,
+            capture_output=True,
+            text=True
+        )
+
+        # Only push if there was actually something to commit
+        if "nothing to commit" in result.stdout:
+            logger.info("Auto-push: nothing new to commit")
             return
-        df = pd.DataFrame(self._buffer)
-        self._loader.save(df)
-        logger.info(f"Flushed {len(self._buffer)} records to storage")
-        self._buffer.clear()
+
+        subprocess.run(
+            ["git", "push"],
+            cwd=base,
+            capture_output=True
+        )
+        logger.info(f"Auto-push: data pushed to GitHub successfully")
+
+    except Exception as e:
+        logger.warning(f"Auto-push failed (non-critical): {e}")
 
     def start(self):
         self._running = True
