@@ -98,8 +98,9 @@ def start(sources: list = None, run_once: bool = False):
             except Exception as e:
                 logger.error(f"[{name}] failed: {e}")
         producer.flush()
-        logger.info("All extractions done. Waiting 15s for consumers to drain...")
-        time.sleep(15)
+        logger.info("All extractions done. Waiting 20s for consumers to drain...")
+        time.sleep(20)
+        storage_con._flush()  # force flush before stopping
         stream_proc.stop()
         storage_con.stop()
         alert_con.stop()

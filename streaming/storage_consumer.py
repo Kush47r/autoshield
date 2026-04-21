@@ -13,7 +13,7 @@ from streaming.topics import NORMALIZED
 
 logger = get_logger("StorageConsumer")
 
-BATCH_SIZE = 500
+BATCH_SIZE = 50
 
 
 class StorageConsumer:
