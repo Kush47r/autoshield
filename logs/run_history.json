@@ -1,0 +1,711 @@
+[
+  {
+    "status": "success",
+    "run_start": "2026-03-09T08:17:02.976035",
+    "run_end": "2026-03-09T08:17:07.519906",
+    "duration_seconds": 4.54,
+    "sources_run": [
+      "abuseipdb",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 150,
+      "by_source": {
+        "abuseipdb": 100,
+        "nvd": 50
+      },
+      "by_severity": {
+        "critical": 107,
+        "high": 21,
+        "medium": 19,
+        "low": 3
+      },
+      "by_indicator_type": {
+        "ip": 100,
+        "cve": 50
+      },
+      "by_threat_type": {
+        "suspicious": 100,
+        "vulnerability": 50
+      },
+      "critical_count": 107,
+      "high_count": 21,
+      "avg_score": 9.03
+    },
+    "files": {
+      "total_saved": 150,
+      "run_timestamp": "20260309_081705",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_081705.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T08:22:08.589557",
+    "run_end": "2026-03-09T08:25:08.123460",
+    "duration_seconds": 179.53,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 7097,
+      "by_source": {
+        "otx": 6937,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 6956,
+        "critical": 107,
+        "high": 21,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "domain": 6445,
+        "file_hash": 369,
+        "ip": 122,
+        "url": 106,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 6466,
+        "apt": 252,
+        "malware": 232,
+        "phishing": 84,
+        "vulnerability": 50,
+        "botnet": 13
+      },
+      "critical_count": 107,
+      "high_count": 21,
+      "avg_score": 5.08
+    },
+    "files": {
+      "total_saved": 7097,
+      "run_timestamp": "20260309_082507",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_082507.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_082507.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T10:57:23.232255",
+    "run_end": "2026-03-09T11:00:24.569224",
+    "duration_seconds": 181.34,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 1289,
+      "by_source": {
+        "otx": 1129,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 1148,
+        "critical": 107,
+        "high": 21,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "domain": 623,
+        "file_hash": 383,
+        "ip": 130,
+        "url": 98,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 655,
+        "malware": 230,
+        "apt": 221,
+        "phishing": 122,
+        "vulnerability": 50,
+        "botnet": 11
+      },
+      "critical_count": 107,
+      "high_count": 21,
+      "avg_score": 5.44
+    },
+    "files": {
+      "total_saved": 1289,
+      "run_timestamp": "20260309_110024",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_110024.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_110024.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T11:08:13.411043",
+    "run_end": "2026-03-09T11:08:16.322922",
+    "duration_seconds": 2.91,
+    "sources_run": [
+      "abuseipdb",
+      "nvd"
+    ],
+    "errors": {
+      "abuseipdb": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/blacklist?confidenceMinimum=90&limit=100"
+    },
+    "stats": {
+      "total_records": 50,
+      "by_source": {
+        "nvd": 50
+      },
+      "by_severity": {
+        "high": 21,
+        "medium": 19,
+        "critical": 7,
+        "low": 3
+      },
+      "by_indicator_type": {
+        "cve": 50
+      },
+      "by_threat_type": {
+        "vulnerability": 50
+      },
+      "critical_count": 7,
+      "high_count": 21,
+      "avg_score": 7.1
+    },
+    "files": {
+      "total_saved": 50,
+      "run_timestamp": "20260309_110815",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_110815.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_110815.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T12:14:17.731657",
+    "run_end": "2026-03-09T12:14:19.827445",
+    "duration_seconds": 2.1,
+    "sources_run": [
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 50,
+      "by_source": {
+        "nvd": 50
+      },
+      "by_severity": {
+        "high": 21,
+        "medium": 19,
+        "critical": 7,
+        "low": 3
+      },
+      "by_indicator_type": {
+        "cve": 50
+      },
+      "by_threat_type": {
+        "vulnerability": 50
+      },
+      "critical_count": 7,
+      "high_count": 21,
+      "avg_score": 7.1
+    },
+    "files": {
+      "total_saved": 50,
+      "run_timestamp": "20260309_121419",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_121419.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_121419.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-09T12:14:48.907032",
+    "run_end": "2026-03-09T12:17:52.509802",
+    "duration_seconds": 183.6,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {
+      "abuseipdb": "429 Client Error: Too Many Requests for url: https://api.abuseipdb.com/api/v2/blacklist?confidenceMinimum=90&limit=100"
+    },
+    "stats": {
+      "total_records": 1189,
+      "by_source": {
+        "otx": 1129,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 1148,
+        "high": 21,
+        "low": 9,
+        "critical": 7,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "domain": 623,
+        "file_hash": 383,
+        "url": 98,
+        "cve": 50,
+        "ip": 30,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 555,
+        "malware": 230,
+        "apt": 221,
+        "phishing": 122,
+        "vulnerability": 50,
+        "botnet": 11
+      },
+      "critical_count": 7,
+      "high_count": 21,
+      "avg_score": 5.05
+    },
+    "files": {
+      "total_saved": 1189,
+      "run_timestamp": "20260309_121751",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_121751.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260309_121751.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-10T05:33:12.460980",
+    "run_end": "2026-03-10T05:36:21.226091",
+    "duration_seconds": 188.77,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 1289,
+      "by_source": {
+        "otx": 1129,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 1146,
+        "critical": 107,
+        "high": 23,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "domain": 623,
+        "file_hash": 383,
+        "ip": 130,
+        "url": 98,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 655,
+        "malware": 230,
+        "apt": 221,
+        "phishing": 122,
+        "vulnerability": 50,
+        "botnet": 11
+      },
+      "critical_count": 107,
+      "high_count": 23,
+      "avg_score": 5.44
+    },
+    "files": {
+      "total_saved": 1289,
+      "run_timestamp": "20260310_053618",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260310_053618.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260310_053618.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-10T14:09:13.628073",
+    "run_end": "2026-03-10T14:12:25.201555",
+    "duration_seconds": 191.57,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 978,
+      "by_source": {
+        "otx": 818,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 835,
+        "critical": 107,
+        "high": 23,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "file_hash": 386,
+        "domain": 306,
+        "ip": 129,
+        "url": 102,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 347,
+        "malware": 230,
+        "apt": 208,
+        "phishing": 132,
+        "vulnerability": 50,
+        "botnet": 11
+      },
+      "critical_count": 107,
+      "high_count": 23,
+      "avg_score": 5.57
+    },
+    "files": {
+      "total_saved": 978,
+      "run_timestamp": "20260310_141223",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260310_141223.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260310_141223.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-16T03:57:02.223588",
+    "run_end": "2026-03-16T04:00:08.185122",
+    "duration_seconds": 185.96,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 705,
+      "by_source": {
+        "otx": 545,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 566,
+        "critical": 107,
+        "high": 20,
+        "low": 7,
+        "info": 5
+      },
+      "by_indicator_type": {
+        "file_hash": 322,
+        "domain": 134,
+        "ip": 119,
+        "url": 75,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 385,
+        "phishing": 100,
+        "apt": 97,
+        "botnet": 58,
+        "vulnerability": 50,
+        "malware": 15
+      },
+      "critical_count": 107,
+      "high_count": 20,
+      "avg_score": 5.8
+    },
+    "files": {
+      "total_saved": 705,
+      "run_timestamp": "20260316_040007",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_040007.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_040007.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-16T04:02:09.551710",
+    "run_end": "2026-03-16T04:05:07.420011",
+    "duration_seconds": 177.87,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {
+      "otx": "502 Server Error: Bad Gateway for url: https://otx.alienvault.com/api/v1/pulses/subscribed?limit=10&page=1"
+    },
+    "stats": {
+      "total_records": 160,
+      "by_source": {
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "critical": 107,
+        "medium": 21,
+        "high": 20,
+        "low": 7,
+        "info": 5
+      },
+      "by_indicator_type": {
+        "ip": 100,
+        "cve": 50,
+        "ip_address": 5,
+        "domain": 5
+      },
+      "by_threat_type": {
+        "suspicious": 106,
+        "vulnerability": 50,
+        "malware": 4
+      },
+      "critical_count": 107,
+      "high_count": 20,
+      "avg_score": 8.52
+    },
+    "files": {
+      "total_saved": 160,
+      "run_timestamp": "20260316_040507",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_040507.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_040507.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-16T04:40:44.261861",
+    "run_end": "2026-03-16T04:43:53.005401",
+    "duration_seconds": 188.74,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 705,
+      "by_source": {
+        "otx": 545,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 566,
+        "critical": 107,
+        "high": 20,
+        "low": 7,
+        "info": 5
+      },
+      "by_indicator_type": {
+        "file_hash": 322,
+        "domain": 134,
+        "ip": 119,
+        "url": 75,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 385,
+        "phishing": 100,
+        "apt": 97,
+        "botnet": 58,
+        "vulnerability": 50,
+        "malware": 15
+      },
+      "critical_count": 107,
+      "high_count": 20,
+      "avg_score": 5.8
+    },
+    "files": {
+      "total_saved": 705,
+      "run_timestamp": "20260316_044352",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_044352.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_044352.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-16T05:21:19.232451",
+    "run_end": "2026-03-16T05:25:51.124000",
+    "duration_seconds": 271.89,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 705,
+      "by_source": {
+        "otx": 545,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 566,
+        "critical": 107,
+        "high": 20,
+        "low": 7,
+        "info": 5
+      },
+      "by_indicator_type": {
+        "file_hash": 322,
+        "domain": 134,
+        "ip": 119,
+        "url": 75,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 385,
+        "phishing": 100,
+        "apt": 97,
+        "botnet": 58,
+        "vulnerability": 50,
+        "malware": 15
+      },
+      "critical_count": 107,
+      "high_count": 20,
+      "avg_score": 5.8
+    },
+    "files": {
+      "total_saved": 705,
+      "run_timestamp": "20260316_052550",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_052550.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_052550.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-03-16T05:46:58.455555",
+    "run_end": "2026-03-16T05:50:09.417209",
+    "duration_seconds": 190.96,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 705,
+      "by_source": {
+        "otx": 545,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 566,
+        "critical": 107,
+        "high": 20,
+        "low": 7,
+        "info": 5
+      },
+      "by_indicator_type": {
+        "file_hash": 322,
+        "domain": 134,
+        "ip": 119,
+        "url": 75,
+        "cve": 50,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 385,
+        "phishing": 100,
+        "apt": 97,
+        "botnet": 58,
+        "vulnerability": 50,
+        "malware": 15
+      },
+      "critical_count": 107,
+      "high_count": 20,
+      "avg_score": 5.8
+    },
+    "files": {
+      "total_saved": 705,
+      "run_timestamp": "20260316_055008",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_055008.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260316_055008.json"
+    }
+  },
+  {
+    "status": "success",
+    "run_start": "2026-04-17T21:15:43.162535",
+    "run_end": "2026-04-17T21:19:00.118397",
+    "duration_seconds": 196.96,
+    "sources_run": [
+      "abuseipdb",
+      "otx",
+      "virustotal",
+      "nvd"
+    ],
+    "errors": {},
+    "stats": {
+      "total_records": 668,
+      "by_source": {
+        "otx": 508,
+        "abuseipdb": 100,
+        "nvd": 50,
+        "virustotal": 10
+      },
+      "by_severity": {
+        "medium": 517,
+        "critical": 100,
+        "high": 38,
+        "low": 9,
+        "info": 4
+      },
+      "by_indicator_type": {
+        "file_hash": 349,
+        "ip": 119,
+        "domain": 103,
+        "cve": 50,
+        "url": 42,
+        "ip_address": 5
+      },
+      "by_threat_type": {
+        "suspicious": 440,
+        "malware": 108,
+        "vulnerability": 50,
+        "phishing": 41,
+        "botnet": 24,
+        "apt": 5
+      },
+      "critical_count": 100,
+      "high_count": 38,
+      "avg_score": 5.84
+    },
+    "files": {
+      "total_saved": 668,
+      "run_timestamp": "20260417_211858",
+      "parquet_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260417_211858.parquet",
+      "json_path": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_20260417_211858.json"
+    }
+  }
+]
