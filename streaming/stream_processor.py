@@ -1,3 +1,5 @@
+# streaming/stream_processor.py
+
 import json
 import threading
 import pandas as pd
@@ -17,6 +19,9 @@ from streaming.topics import (
 
 logger = get_logger("StreamProcessor")
 
+# ML teammate listens to this topic
+LIVE_FEED = "autoshield-live-feed"
+
 TOPIC_NORMALIZER_MAP = {
     RAW_ABUSEIPDB:  normalize_abuseipdb,
     RAW_OTX:        normalize_otx,
@@ -27,8 +32,10 @@ TOPIC_NORMALIZER_MAP = {
 
 class StreamProcessor:
     """
-    Subscribes to all raw threat topics, normalizes each record using
-    the source-specific normalizer, and publishes to threat.normalized.
+    Subscribes to all raw threat topics, normalizes each record,
+    and publishes to both:
+      - threat.normalized      (your storage consumer reads this)
+      - autoshield-live-feed   (ML teammate's model reads this)
     """
 
     def __init__(self):
@@ -51,14 +58,22 @@ class StreamProcessor:
         normalizer = TOPIC_NORMALIZER_MAP.get(topic)
         if not normalizer:
             return
-        df = pd.DataFrame([raw_record])
+
+        df            = pd.DataFrame([raw_record])
         normalized_df = normalizer(df)
+
         for _, row in normalized_df.iterrows():
-            self._producer.send(NORMALIZED, value=row.to_dict())
+            record = row.to_dict()
+
+            # Publish to storage consumer
+            self._producer.send(NORMALIZED, value=record)
+
+            # Also publish to ML teammate's topic
+            self._producer.send(LIVE_FEED, value=record)
 
     def start(self):
         self._running = True
-        logger.info("StreamProcessor started — listening on all raw topics")
+        logger.info("StreamProcessor started — publishing to threat.normalized + autoshield-live-feed")
         for msg in self._consumer:
             if not self._running:
                 break
