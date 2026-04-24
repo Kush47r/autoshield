@@ -1,0 +1,68 @@
+{
+  "trained_at": "20260422_105352",
+  "data_file": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\processed\\threats_latest.parquet",
+  "records_total": 482,
+  "records_train": 385,
+  "records_test": 97,
+  "test_accuracy": 0.9794,
+  "cv_mean": 0.9813,
+  "cv_std": 0.0121,
+  "class_report": {
+    "info": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "low": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 2.0
+    },
+    "medium": {
+      "precision": 1.0,
+      "recall": 0.9850746268656716,
+      "f1-score": 0.9924812030075187,
+      "support": 67.0
+    },
+    "high": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1-score": 0.9411764705882353,
+      "support": 8.0
+    },
+    "critical": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 20.0
+    },
+    "accuracy": 0.979381443298969,
+    "macro avg": {
+      "precision": 0.7777777777777778,
+      "recall": 0.6970149253731343,
+      "f1-score": 0.7200648680524842,
+      "support": 97.0
+    },
+    "weighted avg": {
+      "precision": 0.9908361970217641,
+      "recall": 0.979381443298969,
+      "f1-score": 0.9830823267994121,
+      "support": 97.0
+    }
+  },
+  "top_features": {
+    "severity_score": 0.24159246635939366,
+    "desc_length": 0.1301476007041243,
+    "source_otx": 0.10801812550636235,
+    "source_abuseipdb": 0.07409482428830862,
+    "source_virustotal": 0.07286956144597762,
+    "type_ip": 0.05915858223978382,
+    "type_cve": 0.05511878208181098,
+    "threat_suspicious": 0.047050597771899925,
+    "source_nvd": 0.04273339219941965,
+    "has_country": 0.0420824958864398
+  },
+  "model_path": "C:\\Users\\upadh\\Desktop\\autoshield\\ml\\models\\rf_threat_classifier_20260422_105352.joblib"
+}

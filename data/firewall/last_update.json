@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "generated_at": "2026-04-22T10:57:09.340292+00:00",
+  "total_blocked": 140,
+  "ips_blocked": 99,
+  "domains_blocked": 0,
+  "by_severity": {
+    "critical": 100,
+    "high": 40
+  },
+  "by_source": {
+    "abuseipdb": 100,
+    "nvd": 40
+  },
+  "output_dir": "C:\\Users\\upadh\\Desktop\\autoshield\\data\\firewall"
+}

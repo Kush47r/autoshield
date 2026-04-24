@@ -1,0 +1,3 @@
+# AutoShield domain block list — generated 2026-04-22T10:57:09.340292+00:00
+# Total: 0 domains
+

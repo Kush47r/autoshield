@@ -1,0 +1,3 @@
+# AutoShield hosts block — generated 2026-04-22T10:57:09.340292+00:00
+# Append to /etc/hosts to sink-hole malicious domains
+
